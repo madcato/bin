@@ -11,4 +11,6 @@ then
 else
   echo "Commit message is not provided"
 fi
+
+# test
   

@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+git status -s | git diff
