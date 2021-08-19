@@ -1,34 +1,40 @@
 #!/bin/sh
 
+osascript -e 'tell application "System Events" to tell process "Terminal"
+    tell window 1
+        set position to {1780, 860}
+        set size to {1160, 840}
+    end tell
+end tell'
 osascript -e 'tell application "Terminal" to do script "ssh -t danielvela@bolt watch sensors"'
 osascript -e 'tell application "System Events" to tell process "Terminal"
     tell window 1
-        set position to {1800, 400}
-        set size to {500, 580}
+        set position to {1780, 400}
+        set size to {490, 330}
     end tell
 end tell'
 osascript -e 'tell application "Terminal" to do script "ssh -t danielvela@bolt watch nvidia-smi"'
 osascript -e 'tell application "System Events" to tell process "Terminal"
     tell window 1
-        set position to {2300, 400}
-        set size to {640, 400}
+        set position to {2260, 400}
+        set size to {680, 470}
     end tell
 end tell'
 osascript -e 'tell application "Terminal" to do script "ssh -t danielvela@bolt htop"'
 osascript -e 'tell application "System Events" to tell process "Terminal"
     tell window 1
-        set position to {1800, 0}
-        set size to {1140, 380}
+        set position to {1780, 0}
+        set size to {1160, 380}
     end tell
 end tell'
-osascript -e 'tell application "Terminal" to do script "ssh -t danielvela@bolt watch sudo /home/danielvela/.local/bin/liquidctl status"'
+osascript -e 'tell application "Terminal" to do script "ssh -t danielvela@bolt watch sudo liquidctl status"'
 osascript -e 'tell application "System Events" to tell process "Terminal"
     tell window 1
-        set position to {2300, 810}
-        set size to {640, 170}
+        set position to {1780, 720}
+        set size to {490, 160}
     end tell
 end tell'
-
+ssh bolt
 
 
 
