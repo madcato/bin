@@ -53,4 +53,3 @@ Creates a remote bare git repository in a remote server, and configure the local
 Execute command from parent directory of the git repo:
 
 `$ remotize project server.local`
-
