@@ -18,5 +18,5 @@ begin
   print("")
   print("Now check that your user has access rights in the server, repositorio exist and that git is installed.")
 rescue StandardError => e 
-  STDERR.puts("Error #{e.message}. Usage: remotize.rb <project> <server>")
+  STDERR.puts("Error #{e.message}. (Run this script from the project parent directory)\n\n. Usage: remotize.rb <project> <server>")
 end
