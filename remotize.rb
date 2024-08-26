@@ -14,7 +14,7 @@ begin
   `git clone --bare ./#{project} #{project}.git`
   `scp -r #{project}.git #{server}:#{project}.git`
   `rm -rf #{project}.git`
-  `cd #{project} && git remote add origin #{server}:#{project}.git && git push --set-upstream origin main`
+  `cd #{project} && git remote add origin #{server}:#{project}.git && git push --set-upstream origin master`
   print("")
   print("Now check that your user has access rights in the server, repositorio exist and that git is installed.")
 rescue StandardError => e 
